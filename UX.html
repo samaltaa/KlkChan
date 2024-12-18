@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKCHAN - Foro Viral Dominicano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css"> <!-- Archivo CSS personalizado -->
+    <style>
+        /* Paleta de colores personalizada */
+        :root {
+            --color-azul: #004085; /* Azul bandera */
+            --color-rojo: #D21034; /* Rojo bandera */
+            --color-gris: #F7F7F9; /* Fondo claro */
+            --color-negro: #343A40; /* Texto principal */
+            --color-blanco: #FFFFFF; /* Blanco puro */
+        }
+
+        body {
+            background-color: var(--color-gris);
+            color: var(--color-negro);
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: var(--color-azul);
+        }
+
+        .navbar-brand, .nav-link {
+            color: var(--color-blanco) !important;
+        }
+
+        .nav-link:hover {
+            color: var(--color-rojo) !important;
+        }
+
+        .hero {
+            background-color: var(--color-azul);
+            color: var(--color-blanco);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .post-card {
+            background-color: var(--color-blanco);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .post-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .post-card-body {
+            padding: 1rem;
+        }
+
+        .post-card-title {
+            color: var(--color-azul);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .post-card-text {
+            color: var(--color-negro);
+            margin-bottom: 1rem;
+        }
+
+        .btn-upvote {
+            background-color: var(--color-rojo);
+            color: var(--color-blanco);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+
+        .btn-upvote:hover {
+            background-color: var(--color-azul);
+        }
+
+        footer {
+            background-color: var(--color-azul);
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">KKCHAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container hero">
+        <h1>Bienvenidos a KKCHAN</h1>
+        <p class="lead">La comunidad dominicana diversa, donde compartimos sin reglas ni límites.</p>
+    </div>
+
+    <!-- Popular Posts Section -->
+    <div class="container">
+        <h2 class="text-center mb-4">Publicaciones Populares</h2>
+
+        <!-- Post Card 1 -->
+        <div class="post-card">
+            <img src="https://via.placeholder.com/800x400" alt="Imagen de la publicación">
+            <div class="post-card-body">
+                <h5 class="post-card-title">Discusiones de Historia y Cultura</h5>
+                <p class="post-card-text">"Hablemos sobre cómo Haití nos invadió y cómo eso marcó nuestra historia. 🇩🇴"</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span>Publicado por <strong>HistoriadorRD</strong></span>
+                    <button class="btn-upvote">+120 Me gusta</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post Card 2 -->
+        <div class="post-card">
+            <img src="https://via.placeholder.com/800x400" alt="Imagen de la publicación">
+            <div class="post-card-body">
+                <h5 class="post-card-title">Hay que matar un presidente.</h5>
+                <p class="post-card-text">"sisisi"</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span>Publicado por <strong>MemeLordRD</strong></span>
+                    <button class="btn-upvote">+500 Me gusta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 KKCHAN. Comunidad abierta y sin reglas para todos.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
+
+
