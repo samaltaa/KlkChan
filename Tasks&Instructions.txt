@@ -2,8 +2,24 @@ project-setup.txt
 
 PHASE 1 GOALS: have a very basic working prototype that can make posts, 
 replies, and populates data in each board component 
+--------------------------------------------
 
 !!!!!!!!!!BEFORE YOU BEGIN!!!!!!!!!!!
+You are required to work on your branch only,
+Branches and developer:
+
+!!!!Before you begin 
+developing make sure you 
+switched to your branch!!!
+
+main == Grace/Altagracia 
+frontend1 == Gabriel
+frontend2 == Grey 
+
+backend1 == Grace
+backend2 == Melvin
+--------------------------------------------
+
 Make sure you have downloaded the following libraries within the directory you are working on:
 
 Frontend Libraries (copy and paste in CLI):
@@ -17,6 +33,7 @@ dotenv cors helmet express-rate-limit
 
 Dev Dependencies for Backend:
 npm install --save-dev nodemon eslint prettier husky lint-staged
+--------------------------------------------
 
 # Project Setup and Assignments
 
@@ -44,6 +61,7 @@ npm install --save-dev nodemon eslint prettier husky lint-staged
 │   └── fragments.js          // GraphQL fragments for posts
 ├── package.json
 └── next.config.js
+--------------------------------------------
 
 /backend
 ├── /src
@@ -61,6 +79,7 @@ npm install --save-dev nodemon eslint prettier husky lint-staged
 ├── package.json
 └── .env                    // Environment variables (MongoDB URI, etc.)
 ```
+--------------------------------------------
 
 ## Assigned Tasks
 
